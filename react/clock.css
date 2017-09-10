@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-hand {
+  width: 2px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 25px;
+  transform-origin: center bottom;
+
+  will-change: transform;
+  transition: 0.1s transform ease-in;
+}
